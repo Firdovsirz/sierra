@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner-area{
+    background: url(../../assets//about/about-banner-bg.png) no-repeat scroll center right;
+    width: 100%;
+    height: 100%;
+}
