@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.portfolio-sec>ul {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    margin-bottom: 100px;
+}
+
+.portfolio-sec>ul>li {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #7e8d9c;
+    transition: all 400ms linear 0s;
+    cursor: pointer;
+}
+
+.all-blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    overflow: hidden;
+    margin-top: 100px;
+    grid-template-areas:
+        "a b e e"
+        "c d e e"
+        "j j f g"
+        "j j h i"
+    ;
+}
+
+.first-image {
+    grid-area: a;
+}
+
+.second-image {
+    grid-area: b;
+}
+
+.third-image {
+    grid-area: e;
+}
+
+.fourth-image {
+    grid-area: c;
+}
+
+.fifth-image {
+    grid-area: d;
+}
+
+.sixth-image {
+    grid-area: j;
+}
+
+.seventh-image {
+    grid-area: f;
+}
+
+.eighth-image {
+    grid-area: g;
+}
+
+.ninth-image {
+    grid-area: h;
+}
+
+.tenth-image {
+    grid-area: i;
+}
+
+.brand-blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    overflow: hidden;
+    margin-top: 100px;
+    grid-template-areas:
+        "a b e e"
+        "c d e e"
+    ;
+}
+
+.design-blocks {
+    display: flex;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.architecture-blocks {
+    display: flex;
+    overflow: hidden;
+}
+
+.architecture-blocks>div {
+    display: flex;
+    overflow: hidden;
+    /* margin-top: 100px; */
+    /* display: none; */
+}
+
+.photography-blocks {
+    display: flex;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+@media screen and (max-width : 1500px) {
+
+    .all-blocks,
+    .design-blocks,
+    .brand-blocks,
+    .architecture-blocks,
+    .photography-blocks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .all-blocks>img, .design-blocks>img, .architecture-blocks>img,.photography-blocks>img{
+        width: 50%;
+    } */
+    .portfolio-sec>ul {
+        flex-direction: column;
+    }
+
+    .portfolio-sec>ul>li {
+        margin-block: 20px;
+    }
+}

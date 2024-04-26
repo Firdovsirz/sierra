@@ -1,10 +1,328 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.banner-area{
-    background: url(../../assets//about/about-banner-bg.png) no-repeat scroll center right;
+
+.challenge-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 100px 50px 300px;
+}
+
+.challenge-area-popup>img {
+    height: auto;
+    max-width: 100%;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.features>h5 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #7c8d93;
+    margin-bottom: 10px;
+}
+
+.features>h2 {
+    font-size: 48px;
+    margin-bottom: 55px;
+    font-weight: 600;
+    color: #0b1033;
+}
+
+.features>p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 25px;
+    color: #7c8d93;
+}
+
+.about-video-player {
+    margin-top: 35px;
+}
+
+.about-video-player>div {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.about-video-player>div>img {
+    margin-right: 30px;
+}
+
+.about-video-player>div>p {
+    color: #0b1033;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.swiper-title-about {
+    color: #0b1033;
+    font-size: 24px;
+    font-weight: bold;
+    width: 300px;
+}
+
+.swiper-desc-about {
+    font-size: 15px;
+    color: #7c8d93;
+    line-height: 28px;
+    font-weight: normal;
+    margin: 20px 0px 55px 0px;
+    width: 300px;
+}
+
+.swiper-pro-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #0b1033;
+    padding-bottom: 8px;
+    width: 300px;
+}
+
+.swiper-pro-job {
+    font-family: "Roboto", sans-serif;
+    color: #7c8d93;
+    font-weight: 500;
+    font-size: 12px;
+    width: 300px;
+}
+
+.swiper-profile-about {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-profile-about>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.testimonials-area {
+    padding: 200px 100px 200px 300px;
+    background: url(../../assets/about/3d-shap.png.webp) no-repeat center scroll;
+    border-bottom: 1px solid #bbbec1;
+    margin-bottom: 20px;
+}
+
+.testimonials-swiper>.swiper {
+    margin: 0;
+}
+
+.progress-area-container {
+    display: flex;
+    justify-content: space-between;
+    /* padding: ; */
+}
+
+.company-progress-area {
+    padding: 200px 100px 200px 300px;
+    max-width: 1600px;
+}
+
+.progress-text>h5 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #7c8d93;
+    margin-block: 10px;
+}
+
+.progress-text>h2 {
+    color: #0b1033;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.progress-text>h2>span {
+    font-style: italic;
+    color: #6fbbfe;
+}
+
+.progress-text>p {
+    font-size: 17px;
+    color: #7c8d93;
+    font-weight: 500;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.progress-desc>p {
+    font-size: 17px;
+    color: #7c8d93;
+    font-weight: 500;
+    margin-right: 20px;
+    margin-bottom: 80px;
+}
+
+.linear-prog-title {
+    font-size: 15px;
+    color: #7c8d93;
+    font-weight: 500;
+    padding-bottom: 12px;
+}
+
+.linear-prog-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.linear-prog-percentage {
+    border: 1px solid transparent;
+    padding: 0 10px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-image: linear-gradient(90deg, #6ebdfe 0%, #9b8aff 100%);
+    color: #fff;
+    padding: 0px 16px;
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: 500;
+}
+
+.MuiBox-root>.MuiLinearProgress-root {
+    height: 5px;
+}
+
+.talk-area {
+    background-image: linear-gradient(10deg, #6ebdfe 0%, #9b8aff 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 0;
+    margin-bottom: 2px;
+}
+
+.talk-area>h3 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.talk-area>a {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.video-container {
+    position: fixed;
+    top: 100px;
+    left: auto;
+    width: 70%;
+    height: 80vh;
+    z-index: 100002;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.iframe-video {
     width: 100%;
     height: 100%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+@media screen and (max-width : 1024px) {
+    .challenge-area {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .challenge-area>div {
+        margin-bottom: 100px;
+    }
+
+    .testimonials-area {
+        background-image: none;
+        padding: 65px;
+    }
+
+    .company-progress-area {
+        padding: 20px 20px 20px 65px;
+    }
+
+    .company-progress-area>.progress-area-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .company-progress-area>.progress-area-container>.progress-text>.progress-text-main {
+        font-size: 25px;
+    }
+
+    .talk-area>h3 {
+        font-size: 30px;
+    }
+
+    .talk-area>a {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .talk-area>h3 {
+        font-size: 25px;
+    }
+
+    .talk-area>a {
+        font-size: 30px;
+    }
+
+    .company-progress-area>.progress-area-container>.progress-text>h2 {
+        font-size: 35px;
+    }
+
+    .company-progress-area>.progress-area-container>.progress-text>.progress-text-main {
+        font-size: 15px;
+    }
+
+    .company-progress-area {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .challenge-area>.features>h2 {
+        font-size: 30px;
+    }
+
+    .talk-area>h3 {
+        font-size: 15px;
+    }
+
+    .talk-area>a {
+        font-size: 20px;
+    }
+
+    .testimonials-area {
+        padding: 10px;
+    }
 }

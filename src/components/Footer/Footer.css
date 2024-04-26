@@ -92,3 +92,49 @@ footer {
     border-color: #8cc4fb;
     background-position: right center;
 }
+@media screen and (min-width : 1024px) {
+    footer {
+        padding: 100px;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 50px;
+    }
+
+    footer>div {
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .ins-images {
+        width: 300px;
+    }
+
+    .footer-email-input {
+        width: 80%;
+    }
+    .footer-subscription>form{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .ins-images {
+        width: 200px;
+    }
+}

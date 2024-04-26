@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-desc-section{
+    background: url('../../assets/about/about-banner-bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    width: 100%;
+}
+.desc-container{
+    width: 1100px;
+    padding: 200px 0 95px 0;
+    margin: 0 auto;
+    background: transparent;
+}
+.desc-container>h1{
+    font-size: 72px;
+    color: #0b1033;
+    font-weight: normal;
+}
+.desc-container>p{
+    font-size: 24px;
+    color: #6b7d8e;
+    font-weight: normal;
+    padding-top: 15px;
+}
+.desc-container>div{
+    width: 200px;
+    height: 1px;
+    background: gray;
+    margin-top: 80px;
+}
+@media screen and (min-width : 1024px) and (max-width : 1400px) {
+    .main-desc-section{
+        background-size: cover;
+    }
+    .desc-container{
+        width: 100%;
+        padding-inline: 200px;
+    }
+}
+@media screen and (min-width : 768px) and (max-width : 1024px){
+    .main-desc-section{
+        background-size: cover;
+    }
+    .desc-container{
+        width: 100%;
+        padding-inline: 50px;
+    }
+}
+@media screen and (max-width : 768px){
+    .main-desc-section{
+        background-size: cover;
+    }
+    .desc-container{
+        width: 100%;
+        padding-inline: 50px;
+    }
+}
+@media screen and (max-width : 400px) {
+    .main-desc-section>.desc-container>.main-text{
+        font-size: 40px;
+    }
+}
