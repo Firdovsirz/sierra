@@ -480,9 +480,10 @@ a:active {
 }
 
 @media screen and (max-width : 1500px) {
-    .swiper-element>.item-main{
+    .swiper-element>.item-main {
         margin-left: 30px;
     }
+
     .feature-container {
         width: 100vw;
         flex-wrap: wrap;
@@ -550,13 +551,15 @@ a:active {
 }
 
 @media screen and (max-width : 900px) {
-    .swiper-area{
+    .swiper-area {
         background-size: contain;
         background-repeat: no-repeat;
     }
-    .swiper-element>.item-main{
+
+    .swiper-element>.item-main {
         margin-left: 30px;
     }
+
     .swiper-element>.item-main>h1 {
         font-size: 30px;
         width: 100%;
@@ -574,6 +577,7 @@ a:active {
         margin: 0;
         display: none;
     }
+
     .get-in-touch-area-home {
         flex-direction: column;
         padding: 50px;
@@ -651,11 +655,15 @@ a:active {
     }
 
     .main-3d {
-        padding: 5px;
+        padding: 20px;
     }
 
     .team-area {
         padding: 5px;
+    }
+
+    .team-text {
+        padding: 20px;
     }
 
     .team-title {
@@ -688,6 +696,10 @@ a:active {
 
     .world-map>.map-container>.map-container-text {
         flex-direction: column;
+    }
+
+    .get-in-touch-area-home {
+        padding: 20px;
     }
 
     .get-in-touch-area-home>.get-in-touch-desc>.tel-number {
